@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "dist/esm",
+    "esModuleInterop": true,
+    "lib": ["es2017", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "dist/esm",
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2017"
+  },
+  "include": ["src/**/*.ts"]
+}

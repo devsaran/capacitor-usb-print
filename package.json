@@ -1,0 +1,54 @@
+{
+  "name": "@aybinv7/capacitor-usb-print",
+  "version": "0.1.0",
+  "description": "Capacitor plugin for raw ESC/POS printing to Android USB printer-class devices.",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "unpkg": "dist/plugin.js",
+  "files": [
+    "android/src/main/",
+    "android/build.gradle",
+    "dist/",
+    "ios/Plugin/",
+    "CapacitorUsbPrint.podspec",
+    "Package.swift"
+  ],
+  "author": "devsaran",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsaran/capacitor-usb-print.git"
+  },
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "usb",
+    "escpos",
+    "thermal",
+    "printer",
+    "android"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist && tsc && rollup -c rollup.config.mjs"
+  },
+  "devDependencies": {
+    "@capacitor/android": "8.4.2",
+    "@capacitor/core": "8.4.2",
+    "@capacitor/ios": "8.4.2",
+    "rimraf": "3.0.2",
+    "rollup": "2.79.2",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "8.4.2"
+  },
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  }
+}
