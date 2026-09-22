@@ -1,6 +1,6 @@
 {
   "name": "@aybinv7/capacitor-usb-print",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Capacitor plugin for raw ESC/POS printing to Android USB printer-class devices.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -34,14 +34,14 @@
   },
   "devDependencies": {
     "@capacitor/android": "8.4.2",
-    "@capacitor/core": "8.4.2",
+    "@capacitor/core": ">=8.0.0",
     "@capacitor/ios": "8.4.2",
     "rimraf": "3.0.2",
     "rollup": "2.79.2",
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "8.4.2"
+    "@capacitor/core": ">=8.0.0"
   },
   "capacitor": {
     "ios": {
